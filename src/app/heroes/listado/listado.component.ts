@@ -8,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListadoComponent implements OnInit {
 
+  heroes: string[] = ['Spiderman', 'Iroman', 'Hulk', 'Thor'];
+
+
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+  
+  borrarItem(){
+    
+    this.heroes.length = this.heroes.length -1 ;
+
   }
 
 }
